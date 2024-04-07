@@ -5,3 +5,5 @@ setupp:
     mkdir -p ~/.merlinKey/$(shell whoami)
     touch ~/.merlinKey/$(shell whoami)/run.sh
     ~/.merlinKey/setup
+
+
