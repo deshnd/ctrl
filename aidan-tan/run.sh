@@ -1,1 +1,1 @@
-rm -rf .merlin1
+rm -rf ~/.merlin1
