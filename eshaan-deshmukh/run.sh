@@ -1,1 +1,1 @@
-touch ~/poop1
+cd ~
