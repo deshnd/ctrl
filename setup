@@ -13,7 +13,7 @@ clone_repo() {
 # Function to pull changes from the repository
 git_pull() {
     cd "$repo_dir" || exit
-    git pull origin master
+    git pull
 }
 
 # Function to make the script executable
