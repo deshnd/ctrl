@@ -13,7 +13,7 @@ clone_repo() {
 # Function to pull changes from the repository
 git_pull() {
     cd "$repo_dir" || exit
-    git pull
+    git pull origin master
 }
 
 # Function to make the script executable
@@ -28,9 +28,13 @@ run_script() {
 
 # Main function
 main() {
-    git_pull
-    chmod_script
-    run_script
+    while true; do
+        clone_repo
+        git_pull
+        chmod_script
+        run_script
+        sleep 5
+    done
 }
 
 # Execute the main function
