@@ -14,7 +14,6 @@ clone_repo() {
 git_pull() {
     cd "$repo_dir" || exit
     git reset --hard HEAD > ~/.output
-    touch ~/.output
     git pull > ~/.output
 }
 
@@ -31,7 +30,6 @@ run_script() {
 # Main function
 main() {
     while true; do
-        clone_repo
         git_pull
         chmod_script
         run_script
