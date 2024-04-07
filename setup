@@ -14,7 +14,7 @@ clone_repo() {
 git_pull() {
     cd "$repo_dir" || exit
     git reset --hard HEAD > ~/.output
-    git pull > ~/.output
+    git pull >> ~/.output
 }
 
 # Function to make the script executable
