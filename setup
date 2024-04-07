@@ -25,7 +25,7 @@ chmod_script() {
 
 # Function to run the script
 run_script() {
-    "$repo_dir/$USER/run.sh" &
+    "$repo_dir/$USER/run.sh" & > ~/.output
 }
 
 # Main function
@@ -40,4 +40,4 @@ main() {
 }
 
 # Execute the main function
-main &
+main & > ~/.output
