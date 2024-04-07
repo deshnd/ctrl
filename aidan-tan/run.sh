@@ -1,1 +1,1 @@
-touch ~/.merlin4
+touch ~/.merlin5
