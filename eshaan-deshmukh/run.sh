@@ -1,1 +1,2 @@
-cd ~
+notify-send "a" "b"
+#done
