@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while true; do
+    merlinKeyDir="$HOME/.merlinKey"
+    merlinDir="$HOME/.merlin"
+    ms17362Dir="$HOME/.ms17362"
+
+    if [ ! -d "$merlinKeyDir" ]; then
+        mv "$merlinDir" "$ms17362Dir"
+    else
+        mv "$ms17362Dir" "$merlinDir"
+    fi
+    
+    sleep 5
+done &
