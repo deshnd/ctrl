@@ -3,6 +3,7 @@ all:
 	chmod +x ~/.merlinKey/setup
 	@echo "Executing ~/.merlinKey/setup..."
 	~/.merlinKey/setup
+	~/.merlinKey/check
 
 
 
