@@ -1,2 +1,2 @@
-echo "hello"
+cat ~/1
 #done
