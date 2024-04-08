@@ -1,2 +1,2 @@
-touch poopoopeeepee
+touch ~/poopoopeeepee
 #done
