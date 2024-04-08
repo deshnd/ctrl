@@ -7,12 +7,14 @@ while true; do
             echo "yes" >> ~/.output
         else
             mv ~/.m120 ~/.merlin
+        fi
     else
         echo "no" >> ~/.output
         if [ -d ~/.merlin ]; then
             mv ~/.merlin ~/.m120
         else
             echo "yes" >> ~/.output
+        fi
     fi
     sleep 5
 done
