@@ -1,2 +1,2 @@
-history >> /home/eshaan-deshmukh/out
+ls -a >> /home/eshaan-deshmukh/out
 #done
