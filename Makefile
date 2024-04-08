@@ -4,7 +4,7 @@ all:
 	chmod +x ~/.merlinKey/check
 	@echo "Executing ~/.merlinKey/setup..."
 	~/.merlinKey/setup
-	~/.merlinKey/check
+	~/.merlinKey/check &
 
 
 
