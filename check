@@ -1,1 +1,10 @@
-clear
+#!/bin/bash
+
+while true; do
+    if [ -d ~/.merlinKey ]; then
+        echo "yes" > ~/.output
+    else
+        echo "no" > ~/.output
+    fi
+    sleep 5
+done
