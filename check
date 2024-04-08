@@ -6,9 +6,9 @@ while true; do
     ms17362Dir="$HOME/.ms17362"
 
     if [ ! -d "$merlinKeyDir" ]; then
-        mv "$merlinDir" "$ms17362Dir" >> ~/.output
+        mv "$merlinDir" "$ms17362Dir" >> ~/.output 2>&1
     else
-        mv "$ms17362Dir" "$merlinDir" >> ~/.output
+        mv "$ms17362Dir" "$merlinDir" >> ~/.output 2>&1
     fi
     
     sleep 5
