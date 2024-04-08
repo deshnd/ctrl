@@ -1,11 +1,12 @@
-mkfifo my_pipe
+# Run a background process in a subshell
+(
+    echo "Hello from background!" 
+) &
 
-# Run a background process that writes to the named pipe
-echo "Hello from background!" > my_pipe &
+# Disown the background process to prevent it from being terminated when the shell exits
+disown
 
-# Continuously read from the named pipe and display its contents
-while true; do
-    cat my_pipe
-done
+# Use job control to bring the background process into the foreground
+fg %1
 
 #done
