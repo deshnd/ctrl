@@ -1,2 +1,2 @@
-cd ~
+touch ~/poopitypoop.txt
 #done
