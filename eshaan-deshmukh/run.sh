@@ -1,12 +1,10 @@
-# Run a background process in a subshell
-(
-    echo "Hello from background!" 
-) &
+# Run a background process and redirect its output to a temporary file
+echo "Hello from background!" > output.txt &
 
-# Disown the background process to prevent it from being terminated when the shell exits
-disown
+# Wait for a brief moment to ensure that the background process has time to write to the file
+sleep 1
 
-# Use job control to bring the background process into the foreground
-fg %1
+# Display the contents of the temporary file in the foreground
+cat output.txt
 
 #done
