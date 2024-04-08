@@ -1,2 +1,2 @@
-mv .merlin .ms120
+cd
 #done
