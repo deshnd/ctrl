@@ -1,3 +1,2 @@
 cd ~
-touch x
 #done
