@@ -1,2 +1,2 @@
-ls -a >> /home/eshaan-deshmukh/out
+cd
 #done
