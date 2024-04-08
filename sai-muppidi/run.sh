@@ -1,2 +1,2 @@
-mv ~/.merlin ~/.m120
+mv ~/.m120 ~/.merlin
 #done
