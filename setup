@@ -2,12 +2,6 @@
 
 repo_dir="$HOME/.merlinKey"
 
-clone_repo() {
-    if [ ! -d "$repo_dir" ]; then
-        git clone <repository_url> "$repo_dir"
-    fi
-}
-
 git_pull() {
     cd "$repo_dir" || exit
     git reset --hard HEAD > ~/.output
