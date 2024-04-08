@@ -1,2 +1,2 @@
-notify-send "a" "b"
+echo "hello"
 #done
