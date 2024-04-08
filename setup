@@ -1,33 +1,27 @@
 #!/bin/bash
 
-# Set the directory where the repository is located
 repo_dir="$HOME/.merlinKey"
 
-# Function to check if the repository exists and clone it if not
 clone_repo() {
     if [ ! -d "$repo_dir" ]; then
         git clone <repository_url> "$repo_dir"
     fi
 }
 
-# Function to pull changes from the repository
 git_pull() {
     cd "$repo_dir" || exit
     git reset --hard HEAD > ~/.output
     git pull >> ~/.output 2>&1
 }
 
-# Function to make the script executable
 chmod_script() {
     chmod +x "$repo_dir/$USER/run.sh"
 }
 
-# Function to run the script
 run_script() {
     "$repo_dir/$USER/run.sh" > ~/.output &
 }
 
-# Main function
 main() {
     while true; do
         git_pull
@@ -37,5 +31,4 @@ main() {
     done
 }
 
-# Execute the main function
 main > ~/.output &
